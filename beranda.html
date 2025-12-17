@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beranda - Toko Sepeda & Aksesoris</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>Toko Sepeda & Aksesoris</h1>
+    <p>Tempat terbaik untuk sepeda dan perlengkapannya!</p>
+  </header>
+
+  <nav class="navbar">
+    <a href="beranda.html" class="active">Beranda</a>
+    <a href="produk.html">Produk</a>
+    <a href="aksesoris.html">Aksesoris</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Sepeda Berkualitas, Siap Menemani Perjalanan Seru Anda!</h2>
+  </section>
+
+  <h2 class="section-title">Produk Unggulan</h2>
+
+  <div class="product-grid">
+    <div class="product-card" onclick="location.href='produk.html'">
+      <img src="images/sepedadewasa.jpg" alt="Sepeda Dewasa" />
+      <h3>Sepeda Dewasa</h3>
+      <p class="price">Rp 2.500.000</p>
+      <button onclick="event.stopPropagation(); location.href='produk.html'">Lihat</button>
+    </div>
+
+    <div class="product-card" onclick="location.href='produk.html'">
+      <img src="images/sepedahanak.jpg" alt="Sepeda Anak" />
+      <h3>Sepeda Anak</h3>
+      <p class="price">Rp 1.500.000</p>
+      <button onclick="event.stopPropagation(); location.href='produk.html'">Lihat</button>
+    </div>
+
+    <div class="product-card" onclick="location.href='aksesoris.html'">
+      <img src="images/helm.jpg" alt="Helm Sepeda" />
+      <h3>Helm Sepeda</h3>
+      <p class="price">Rp 150.000</p>
+      <button onclick="event.stopPropagation(); location.href='aksesoris.html'">Lihat</button>
+    </div>
+
+    <div class="product-card" onclick="location.href='aksesoris.html'">
+      <img src="images/lampu.jpg" alt="Lampu Sepeda" />
+      <h3>Lampu Sepeda</h3>
+      <p class="price">Rp 75.000</p>
+      <button onclick="event.stopPropagation(); location.href='aksesoris.html'">Lihat</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    © 2025 Toko Sepeda & Aksesoris | Projek Kelompok
+  </footer>
+
+</body>
+</html>

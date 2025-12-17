@@ -1,0 +1,189 @@
+/* =========================
+   GLOBAL
+========================= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 0; /* biar header full lebar */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin: 40px 0 30px;
+  color: #222;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+  background-color: #7bed9f;
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  background-color: #8dff9a;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 12px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* navbar aktif */
+.navbar a.active {
+  text-decoration: underline;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 0 20px;
+}
+
+.hero h2 {
+  font-size: 28px;
+  color: #0c0c0c;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* =========================
+   PRODUK GRID
+========================= */
+.product-grid {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Kartu Produk */
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  margin: 12px 0 8px 0;
+  color: #222;
+}
+
+.product-card .price {
+  font-size: 18px;
+  color: #e74c3c;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.product-card button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.product-card button:hover {
+  background-color: #2980b9;
+}
+
+/* =========================
+   CONTACT BOX
+========================= */
+.contact-box {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+}
+
+.contact-box button {
+  margin-top: 12px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  margin-top: 40px;
+  background: #7bed9f;
+  color: rgb(252, 249, 249);
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+}
+
+.map-box {
+  margin-top: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
